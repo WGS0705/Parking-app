@@ -7,12 +7,11 @@ body {
 }
 
 header{
-    background-image: url(parking.png);
+    background-image: url(parkingfooto.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 40vh;
-    color: white;
+    min-height: 25vh;
     padding: 50px 20px;
 }
 
@@ -20,7 +19,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:40 px;
+    gap:40px;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -28,45 +27,95 @@ header{
 .textos-header h1{
     margin:0 ;
     font-size: 100px;
-    font-family: 'Oswald';
-    font-weight: 100;
+    font-family: 'Franklin Gothic Heavy', 'Arial Black', 'Impact', sans-serif;
+    font-weight: 900;
+    color:darkblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
 }
 .textos-header p {
     margin: 15px 0 0 0 ;
-    font-size: 28px;
-    font-family : Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Satisfy', cursive;
+    color:whitesmoke;
 
 }
-
-.columnas{
-    display: flex;
-    justify-content: center;
-    gap:200 px;
-    margin : 80 px 20px;
-    flex-wrap: wrap;
+.introduccion-parkings {
+    max-width: 800px;
+    margin:40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.introduccion-parkings h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333; 
+}
+.lista-parkings {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 30px; 
+    max-width: 1000px; 
+    margin: 50px auto; 
+    padding: 0 20px;
 }
 
-.columna{
+.parking-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     display: flex;
+    align-items: center; 
     flex-direction: column;
-    align-items: center;
-    padding: 0 30px;
+    flex-wrap: nowrap; 
+}
+.parking-card:nth-child(even) { 
+    flex-direction: row-reverse; /* Invierte el orden: Imagen a la derecha */
 }
 
-.columna h2{
-    margin-bottom: 20px;
-    font-size:26px;
-    color:#333;
+.card-imagen {
+    flex: 0 0 35%; /* Ocupa el 35% del ancho */
+    max-height: 250px; 
+    overflow: hidden;
+    border-radius: 8px;
 }
-.imagen{
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    cursor:pointer;
-    transition: transform 0.2s;
+.card-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: box;
+}
+.card-contenido {
+    flex: 1; 
+    padding: 20px 30px;
 }
 
-.imagen:hover{
-    transform: scale(1.05);
+.card-contenido img {
+    /* Limita la altura de CUALQUIER imagen que esté en el bloque de texto */
+    max-height: 80px; 
+    width: auto;
+    /* Los convierte a elementos en línea para que no rompan el texto */
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 10px;
 }
+
+.boton-parking {
+    display: inline-block;
+    background-color: aquamarine;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-parking:hover {
+    background-color: #689F38; /* Efecto hover */
+}
+

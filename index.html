@@ -7,7 +7,7 @@
     <link rel="icon" href="images/favicon.ico">
     
     <title>Parkify</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,26 +22,43 @@
         
      </header>
 
-    
-    <p> Elige el parking que deseas visitar:</p>
+    <main>
+        <section class="introduccion-parkings">
+            <h2>Los mejores parkings cerca de ti</h2>
+            <p>Aquí puedes encontrar y reservar plaza en nuestros dos parkings exclusivos: ETSII y Psicología. Ofrecemos tarifas competitivas y acceso 24h.</p>
+            <p>¡Reserva ahora tu plaza y olvídate de buscar aparcamiento!</p>
+        </section>
 
-    <div class= "columnas">
+        <section class="lista-parkings">
+            
+            <article class="parking-card">
 
-        <div class = "columna">
-            <h2> Parking ETSII</h2>
-            <a href = "index_etsii.html">
-                <img src = "logo-ETSII-US-Horizontal-Color.png" class = "imagen" alt = "ETSII">
-            </a>
-        </div>
+                <div class="card-imagen">
+                    <img src="etsii.jpeg" alt="Parking ETSII">
+                </div>
 
-        <div class = "columna">
-            <h2> Parking Psicologia</h2>
-            <a href = "index_psicologia.html">
-            <img src = "logo_facpsicologia_logos_neg.png" class = "imagen" alt = "Facultad Psicologia">
-        </a>
-        </div>
+                <div class="card-contenido">
 
-    </div>
+                    <h3>Parking ETSII</h3>
+                    <p>Ubicado en el campus de la Escuela Técnica Superior de Ingeniería Informática, es ideal para estudiantes y profesores. Abierto 24/7.</p>
+                    <a href="index_etsii.html" class="boton-parking">Conoce el parking</a>
+                    
+                </div>
+            </article>
+
+            <article class="parking-card">
+                <div class="card-imagen">
+                    <img src="logo_facpsicologia_logos_neg.png" alt="Parking Psicología">
+                </div>
+                <div class="card-contenido">
+                    <h3>Parking Psicología</h3>
+                    <p>Junto a la Facultad de Psicología, perfecto para visitar el campus o el área circundante. Acceso fácil y seguro.</p>
+                    <a href="index_psicologia.html" class="boton-parking">Conoce el parking</a>
+                </div>
+            </article>
+        
+        </section>
+    </main>
     <script src = "app.js"></script>
 </body>
 </html>
