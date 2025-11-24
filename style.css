@@ -5,12 +5,12 @@ body {
     margin: 0;
     padding: 0;
 }
+/*CABECERA*/
 
 header{
-    background: linear-gradient(-45deg, #B22222, #8B0000, #B22222);
-    background-size: 400% 400%; 
+    background: linear-gradient(-45deg, #B22222, #8B0000, #B22222, #FF4500);
+    background-size: 600% 600%; 
     animation: HeaderGradient 15s ease infinite; 
-    background-position: center;
     background-repeat: no-repeat;
     min-height: 25vh;
     padding: 50px 20px;
@@ -53,8 +53,11 @@ header{
     animation: TitleZoom 1s ease-out forwards;
 
 }
+
+/*INTRODUCCION*/
+
 .introduccion-parkings {
-    max-width: 800px;
+    max-width: 1000px;
     margin:40px auto;
     text-align: center;
     padding: 0 20px;
@@ -63,14 +66,17 @@ header{
     font-size: 50px;
     margin-bottom: 10px;
     color: black;
-    font-family: 'Calibri', cursive; 
+    font-family: 'Montserrat', sans-serif; 
 }
 .introduccion-parkings p {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: black; 
-    font-family: 'Calibri', cursive;
+    font-family: 'Montserrat', sans-serif; 
 }
+
+
+/*Tarjetas parking*/
 
 .lista-parkings {
 
@@ -112,6 +118,7 @@ header{
     object-fit: cover; 
     display: block;
 }
+
 .card-contenido {
     flex: 1; 
     padding: 20px 30px;
@@ -135,14 +142,35 @@ header{
     margin: 5px auto 0 auto;
 }
 .card-contenido p {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.6; 
     color: black;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; 
 }
+.parking-ubicacion {
+    font-size: 18px; 
+    margin: 10px 0 20px 0;
+    color: black;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.parking-ubicacion .icono-chincheta {
+    font-size: 24px; 
+    margin-right: 8px; 
+}
+
+.parking-ubicacion .direccion {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold;
+}
+
 .card-contenido img {
     /* Limita la altura de CUALQUIER imagen que esté en el bloque de texto */
-    max-height: 80px; 
+    max-height: 100px; 
     width: auto;
     /* Los convierte a elementos en línea para que no rompan el texto */
     display: inline-block; 
