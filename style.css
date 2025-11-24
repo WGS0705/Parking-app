@@ -62,12 +62,12 @@ body {
 
 /*CABECERA*/
 
-header{
+.cabecera-principal{
     background-color: rgb(180, 15, 15);
     background-size: 600% 600%; 
     animation: HeaderGradient 15s ease infinite; 
     background-repeat: no-repeat;
-    min-height: 25vh;
+    min-height: 25vh; /* ESTO MANTIENE EL HEADER GRANDE AQUÍ */
     padding: 50px 20px;
 }
 
@@ -100,10 +100,11 @@ header{
 }
 .textos-header p {
     margin: 15px 0 0 0 ;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic; 
     color:whitesmoke;
     animation: TitleZoom 1s ease-out forwards;
 
@@ -118,13 +119,13 @@ header{
     padding: 0 20px;
 }
 .introduccion-parkings h2 {
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 10px;
     color: black;
     font-family: 'Montserrat', sans-serif; 
 }
 .introduccion-parkings p {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
     color: black; 
     font-family: 'Montserrat', sans-serif; 
