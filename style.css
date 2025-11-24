@@ -5,10 +5,65 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Cabecera GLOBAL*/
+
+.barra-sitio-simple {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo casi negro para contraste */
+    padding: 10px 30px; /* Un poco de espacio arriba/abajo y a los lados */
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea verticalmente el logo y el texto */
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between; 
+}
+
+.barra-sitio-simple .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.barra-sitio-simple .logo-pequeno {
+    height: 30px; 
+    width: auto;
+    margin-right: 10px;
+}
+
+.barra-sitio-simple .nombre-sitio {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+    font-family: 'Bebas Neue', sans-serif; 
+}
+.enlace-casa {
+    display: flex;
+    align-items: center;
+    font-size: 24px; 
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s;
+}
+
+.enlace-casa:hover {
+    color: #FF4500; 
+}
+.enlace-casa .icono-casa-img {
+    height: 30px; /* Ajusta este valor para el tamaño deseado (igual que el logo del coche) */
+    width: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Efecto de transición para el hover */
+}
+
+.enlace-casa:hover .icono-casa-img {
+    transform: scale(1.1); /* Ligeramente más grande al pasar el ratón */
+    /* Puedes añadir también un filtro si la imagen lo permite, por ejemplo: */
+    /* filter: brightness(1.2); */ 
+}
+
 /*CABECERA*/
 
 header{
-    background: linear-gradient(-45deg, #B22222, #8B0000, #B22222, #FF4500);
+    background-color: rgb(180, 15, 15);
     background-size: 600% 600%; 
     animation: HeaderGradient 15s ease infinite; 
     background-repeat: no-repeat;
@@ -193,4 +248,3 @@ header{
 .boton-parking:hover {
     background-color: rgb(127, 31, 31); /* Efecto hover */
 }
-
